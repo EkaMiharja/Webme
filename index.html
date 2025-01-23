@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <header class="header">
+        <a href="#" class="logo"><span>Eka Miharja</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <a href="https://github.com/EkaMiharja" class="visit-btn">Visit Github</a>
+    </header>
+
+<!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="img/image.jpg" alt="Profile Picture">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>M. Eka Miharja</h1>
+                    <span>Student at Polytechnic Negeri Jakarta</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn" onclick="redirLinkedin()">Download CV</div>                      
+                    <div class="btn"  onclick="redirWhatsApp()">Contact</div>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-github" onclick="redirGithub()"></i>
+                    <i class="fa-brands fa-linkedin" onclick="redirLinkedin()"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Front-End</span>
+                    <h3>2024-2025</h3>
+                    <p>Saya memiliki keahlian di bagian Front-End, khususnya dalam mendesain website. Bahasa yang sering saya gunakan yaitu JavaScript dan CSS.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Back-End</span>
+                    <h3>2024-2025</h3>
+                    <p>Saat ini saya baru mempelajari pemrograman Back-End menggunakan bahasa C++ saat di perkuliahan. Saya membuat beberapa project menggunakan bahasa C++ basic. </p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-powerpoint"></i>
+                    <span>Power Point</span>
+                    <h3>2022-2025</h3>
+                    <p>Saya sudah cukup lama menggunakan Microsoft Power Point untuk presentasi di Sekolah, saya suka menganimasikan berbagai elemen di Power Point.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-word"></i>
+                    <span>Word</span>
+                    <h3>2019-2025</h3>
+                    <p>Saya sering menggunakan Microsoft Word untuk menulis makalah atau laporan untuk tugas sekolah, sehingga membuat saya merasa cukup mudah dalam menggunakan Word.</p>
+                </div>
+            </div>
+            <img src="img/image.jpg" alt="Profile">
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Project</h2>
+
+        <div class="projects-grid">
+
+            <div class="projects-card">
+                <img src="img/project-1.png" alt="Projects 1">
+                <h3>Project Nasi Padang</h3>
+                <p>Project ini dibuat untuk memenuhi tugas UAS</p>
+                <div class="btn-group">
+                    <div class="btn" onclick="redirDemo1()">Live Demo</div>
+                    <div class="btn" onclick="redirRepo1()">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="img/project-2.png" alt="Projects 1">
+                <h3>Project Bootcamp</h3>
+                <p>Project ini dibaut untuk memenuhi tugas akhir bootcamp Dicoding</p>
+                <div class="btn-group">
+                    <div class="btn" onclick="redirDemo2()">Live Demo</div>
+                    <div class="btn" onclick=" redirRepo2()">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="img/project-3.png" alt="Projects 1">
+                <h3>Program Bank</h3>
+                <p>Project ini dibuat menggunakan bahasa C++ untuk memenuhi tugas harian</p>
+                <div class="btn-group">
+                    <div class="btn"  onclick="redirProgramiz()">Live Demo</div>
+                    <div class="btn" onclick=" redirRepo3()">Github Repo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+<form name="email-pengunjung">
+<section class="contact" id="contact">
+    <div class="input-box">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="input">
+            <input type="email" placeholder="Your Email" name="email">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </div>
+</section>
+</form>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <ul>
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <p class="copyright">&copy All Rights Reserved | Eka</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
